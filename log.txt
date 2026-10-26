@@ -1,0 +1,205 @@
++ flutter --version
+Flutter 3.27.4 • channel stable • https://github.com/flutter/flutter.git
+Framework • revision d8a9f9a52e (1 year, 9 months ago) • 2025-01-31 16:07:18 -0500
+Engine • revision 82bd5b7209
+Tools • Dart 3.6.2 • DevTools 2.40.3
++ flutter create --org com.renang --project-name renyang_musics --platforms android .
+
+  ╔════════════════════════════════════════════════════════════════════════════╗
+  ║                 Welcome to Flutter! - https://flutter.dev                  ║
+  ║                                                                            ║
+  ║ The Flutter tool uses Google Analytics to anonymously report feature usage ║
+  ║ statistics and basic crash reports. This data is used to help improve      ║
+  ║ Flutter tools over time.                                                   ║
+  ║                                                                            ║
+  ║ Flutter tool analytics are not sent on the very first run. To disable      ║
+  ║ reporting, type 'flutter config --no-analytics'. To display the current    ║
+  ║ setting, type 'flutter config'. If you opt out of analytics, an opt-out    ║
+  ║ event will be sent, and then no further information will be sent by the    ║
+  ║ Flutter tool.                                                              ║
+  ║                                                                            ║
+  ║ By downloading the Flutter SDK, you agree to the Google Terms of Service.  ║
+  ║ The Google Privacy Policy describes how data is handled in this service.   ║
+  ║                                                                            ║
+  ║ Moreover, Flutter includes the Dart SDK, which may send usage metrics and  ║
+  ║ crash reports to Google.                                                   ║
+  ║                                                                            ║
+  ║ Read about data we send with crash reports:                                ║
+  ║ https://flutter.dev/to/crash-reporting                                     ║
+  ║                                                                            ║
+  ║ See Google's privacy policy:                                               ║
+  ║ https://policies.google.com/privacy                                        ║
+  ║                                                                            ║
+  ║ To disable animations in this tool, use                                    ║
+  ║ 'flutter config --no-cli-animations'.                                      ║
+  ╚════════════════════════════════════════════════════════════════════════════╝
+
+Recreating project ....
+  android/settings.gradle (created)
+  android/app/src/profile/AndroidManifest.xml (created)
+  android/app/src/main/res/values-night/styles.xml (created)
+  android/app/src/main/res/mipmap-mdpi/ic_launcher.png (created)
+  android/app/src/main/res/drawable-v21/launch_background.xml (created)
+  android/app/src/main/res/drawable/launch_background.xml (created)
+  android/app/src/main/res/values/styles.xml (created)
+  android/app/src/main/res/mipmap-hdpi/ic_launcher.png (created)
+  android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png (created)
+  android/app/src/main/res/mipmap-xhdpi/ic_launcher.png (created)
+  android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png (created)
+  android/app/src/main/AndroidManifest.xml (created)
+  android/app/src/debug/AndroidManifest.xml (created)
+  android/.gitignore (created)
+  android/gradle.properties (created)
+  android/gradle/wrapper/gradle-wrapper.properties (created)
+  android/renyang_musics_android.iml (created)
+  android/app/build.gradle (created)
+  android/app/src/main/kotlin/com/renang/renyang_musics/MainActivity.kt (created)
+  android/build.gradle (created)
+  .idea/modules.xml (created)
+  .idea/libraries/KotlinJavaRuntime.xml (created)
+  .idea/libraries/Dart_SDK.xml (created)
+  .idea/runConfigurations/main_dart.xml (created)
+  .idea/workspace.xml (created)
+  renyang_musics.iml (created)
+  analysis_options.yaml (created)
+Resolving dependencies...
+Downloading packages...
+Got dependencies.
+Wrote 30 files.
+
+All done!
+You can find general documentation for Flutter at: https://docs.flutter.dev/
+Detailed API documentation is available at: https://api.flutter.dev/
+If you prefer video documentation, consider: https://www.youtube.com/c/flutterdev
+
+In order to run your application, type:
+
+  $ cd .
+  $ flutter run
+
+Your application code is in ./lib/main.dart.
+
++ cp ci/AndroidManifest.xml android/app/src/main/AndroidManifest.xml
++ rm -rf android/app/src/main/kotlin
++ mkdir -p android/app/src/main/kotlin/com/renang/renyang_musics
++ cp ci/MainActivity.kt android/app/src/main/kotlin/com/renang/renyang_musics/MainActivity.kt
++ flutter pub get
+Resolving dependencies...
+Downloading packages...
+  async 2.11.0 (2.13.1 available)
+  audio_session 0.1.25 (0.2.4 available)
+  boolean_selector 2.1.1 (2.1.2 available)
+  characters 1.3.0 (1.4.1 available)
+  checked_yaml 2.0.3 (2.0.4 available)
+  cli_util 0.4.2 (0.6.0 available)
+  clock 1.1.1 (1.1.3 available)
+  collection 1.19.0 (1.19.1 available)
+  cross_file 0.3.4+2 (0.4.0 available)
+  fake_async 1.3.1 (1.3.3 available)
+  ffi 2.1.3 (2.2.0 available)
+  file_picker 8.3.7 (13.2.0 available)
+  flutter_cache_manager 3.4.1 (3.4.5 available)
+  flutter_plugin_android_lifecycle 2.0.29 (2.0.35 available)
+  google_fonts 6.3.0 (9.0.0 available)
+  js 0.7.1 (0.7.2 available)
+  json_annotation 4.9.0 (4.12.0 available)
+  just_audio 0.9.46 (0.10.6 available)
+  leak_tracker 10.0.7 (11.0.2 available)
+  leak_tracker_flutter_testing 3.0.8 (3.0.10 available)
+  leak_tracker_testing 3.0.1 (3.0.2 available)
+  matcher 0.12.16+1 (0.12.20 available)
+  material_color_utilities 0.11.1 (0.13.1 available)
+  meta 1.15.0 (1.19.0 available)
+  path 1.9.0 (1.9.1 available)
+  path_provider 2.1.5 (2.1.6 available)
+  path_provider_android 2.2.17 (2.3.1 available)
+  path_provider_foundation 2.4.1 (2.6.0 available)
+  path_provider_linux 2.2.1 (2.2.2 available)
+  path_provider_platform_interface 2.1.2 (2.1.3 available)
+  permission_handler 11.4.0 (13.0.2 available)
+  permission_handler_android 12.1.0 (14.1.0 available)
+  platform 3.1.6 (3.2.0 available)
+  source_span 1.10.0 (1.10.2 available)
+  sqflite 2.4.1 (2.4.5 available)
+  sqflite_android 2.4.0 (2.4.5 available)
+  sqflite_common 2.5.4+6 (2.5.14 available)
+  sqflite_darwin 2.4.1+1 (2.4.4+1 available)
+  sqflite_platform_interface 2.4.0 (2.4.3 available)
+  stack_trace 1.12.0 (1.12.2 available)
+  stream_channel 2.1.2 (2.1.4 available)
+  string_scanner 1.3.0 (1.4.1 available)
+  synchronized 3.3.0+3 (3.5.0 available)
+  term_glyph 1.2.1 (1.2.2 available)
+  test_api 0.7.3 (0.7.15 available)
+  vector_math 2.1.4 (2.4.3 available)
+  vm_service 14.3.0 (15.4.0 available)
+  web 1.1.1 (1.1.2 available)
+  win32 5.10.1 (6.4.0 available)
+Got dependencies!
+49 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
++ dart run flutter_launcher_icons
+  ════════════════════════════════════════════
+     FLUTTER LAUNCHER ICONS (v0.14.4)                               
+  ════════════════════════════════════════════
+  
+• Creating default icons Android
+• Creating adaptive icons Android
+• Overwriting the default Android launcher icon with a new icon
+• No colors.xml file found in your Android project
+• Creating colors.xml file and adding it to your Android project
+• Creating mipmap xml file Android
+No platform provided
+
+✓ Successfully generated launcher icons
++ flutter analyze --no-fatal-infos --no-fatal-warnings
+Analyzing hello...                                              
+
+warning • The include file 'package:flutter_lints/flutter.yaml' in '/home/runner/work/hello/hello/analysis_options.yaml' can't be found when analyzing '/home/runner/work/hello/hello' • analysis_options.yaml:10:10 • include_file_not_found
+  error • 'Thumb' isn't a function • lib/home.dart:291:83 • invocation_of_non_function
+  error • The name 'Thumb' is defined in the libraries 'package:flutter/src/material/slider_theme.dart (via package:flutter/material.dart)' and 'package:renyang_musics/widgets.dart' • lib/home.dart:291:83 • ambiguous_import
+  error • 'Thumb' isn't a function • lib/home.dart:397:35 • invocation_of_non_function
+  error • The name 'Thumb' is defined in the libraries 'package:flutter/src/material/slider_theme.dart (via package:flutter/material.dart)' and 'package:renyang_musics/widgets.dart' • lib/home.dart:397:35 • ambiguous_import
+  error • 'Thumb' isn't a function • lib/home.dart:407:46 • invocation_of_non_function
+  error • The name 'Thumb' is defined in the libraries 'package:flutter/src/material/slider_theme.dart (via package:flutter/material.dart)' and 'package:renyang_musics/widgets.dart' • lib/home.dart:407:46 • ambiguous_import
+   info • The import of 'dart:ui' is unnecessary because all of the used elements are also provided by the import of 'package:flutter/material.dart' • lib/player_page.dart:4:8 • unnecessary_import
+
+8 issues found. (ran in 12.5s)
++ true
++ flutter build apk --release
+
+Running Gradle task 'assembleRelease'...                        
+Checking the license for package Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/licenses
+License for package Android SDK Build-Tools 33.0.1 accepted.
+Preparing "Install Android SDK Build-Tools 33.0.1 v.33.0.1".
+"Install Android SDK Build-Tools 33.0.1 v.33.0.1" ready.
+Installing Android SDK Build-Tools 33.0.1 in /usr/local/lib/android/sdk/build-tools/33.0.1
+"Install Android SDK Build-Tools 33.0.1 v.33.0.1" complete.
+"Install Android SDK Build-Tools 33.0.1 v.33.0.1" finished.
+lib/home.dart:291:83: Error: 'Thumb' is imported from both 'package:flutter/src/material/slider_theme.dart' and 'package:renyang_musics/widgets.dart'.
+              AspectRatio(aspectRatio: 1, child: LayoutBuilder(builder: (_, b) => Thumb(t: withCover, size: b.maxWidth, radius: 18))),
+                                                                                  ^^^^^
+lib/home.dart:397:35: Error: 'Thumb' is imported from both 'package:flutter/src/material/slider_theme.dart' and 'package:renyang_musics/widgets.dart'.
+    if (covers.length < 4) return Thumb(t: tracks.isEmpty ? null : (covers.isNotEmpty ? covers.first : tracks.first), size: 52, radius: 14);
+                                  ^^^^^
+lib/home.dart:407:46: Error: 'Thumb' is imported from both 'package:flutter/src/material/slider_theme.dart' and 'package:renyang_musics/widgets.dart'.
+          children: [for (final t in covers) Thumb(t: t, size: 26, radius: 0)],
+                                             ^^^^^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildRelease'.
+> Process 'command '/opt/hostedtoolcache/flutter/stable-3.27.4-x64/flutter/bin/flutter'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 54s
+Running Gradle task 'assembleRelease'...                          175.3s
+Gradle task assembleRelease failed with exit code 1
