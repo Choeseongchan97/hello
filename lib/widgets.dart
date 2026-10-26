@@ -123,11 +123,11 @@ class Paw extends StatelessWidget {
 }
 
 // ---------------- 썸네일 · 곡 줄 ----------------
-class Thumb extends StatelessWidget {
+class CoverThumb extends StatelessWidget {
   final Track? t;
   final double size;
   final double radius;
-  const Thumb({super.key, required this.t, this.size = 46, this.radius = 13});
+  const CoverThumb({super.key, required this.t, this.size = 46, this.radius = 13});
   @override
   Widget build(BuildContext context) {
     final c = RC.of(context);
@@ -190,7 +190,7 @@ class TrackTile extends StatelessWidget {
         child: Row(children: [
           if (leading != null) leading!,
           Stack(children: [
-            Thumb(t: t),
+            CoverThumb(t: t),
             if (cur && app.player.playing)
               Positioned.fill(
                 child: Container(
@@ -384,7 +384,7 @@ class MiniPlayer extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.fromLTRB(10, 8, 6, 8),
                     child: Row(children: [
-                      Hero(tag: 'cover', child: Thumb(t: t, size: 44, radius: 22)),
+                      Hero(tag: 'cover', child: CoverThumb(t: t, size: 44, radius: 22)),
                       const SizedBox(width: 10),
                       Expanded(
                         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -518,7 +518,7 @@ Future<void> pickPlaylist(BuildContext context, List<String> ids) async {
             ),
             for (final p in app.playlists)
               ListTile(
-                leading: Thumb(t: app.playlistTracks(p).firstOrNull, size: 42),
+                leading: CoverThumb(t: app.playlistTracks(p).firstOrNull, size: 42),
                 title: Text(p.name, style: disp(ctx, 16)),
                 subtitle: Text('${p.trackIds.length}곡'),
                 onTap: () {
@@ -551,7 +551,7 @@ Future<void> showTrackMenu(BuildContext context, Track t) async {
         padding: const EdgeInsets.only(bottom: 10),
         child: Column(mainAxisSize: MainAxisSize.min, children: [
           ListTile(
-            leading: Thumb(t: t, size: 48),
+            leading: CoverThumb(t: t, size: 48),
             title: Text(t.title, style: disp(ctx, 17), maxLines: 2),
             subtitle: Text('${t.artist}${t.album.isNotEmpty ? ' · ${t.album}' : ''}'),
           ),

@@ -288,7 +288,7 @@ class GroupTab extends StatelessWidget {
             onTap: () => _open(context, keys[i]),
             borderRadius: BorderRadius.circular(18),
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              AspectRatio(aspectRatio: 1, child: LayoutBuilder(builder: (_, b) => Thumb(t: withCover, size: b.maxWidth, radius: 18))),
+              AspectRatio(aspectRatio: 1, child: LayoutBuilder(builder: (_, b) => CoverThumb(t: withCover, size: b.maxWidth, radius: 18))),
               const SizedBox(height: 6),
               Text(keys[i], maxLines: 1, overflow: TextOverflow.ellipsis, style: disp(context, 15)),
               Text(sub(l), maxLines: 1, overflow: TextOverflow.ellipsis, style: body(context, 12, color: c.muted)),
@@ -394,7 +394,7 @@ class _Mosaic extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final covers = tracks.where((t) => t.coverPath != null).take(4).toList();
-    if (covers.length < 4) return Thumb(t: tracks.isEmpty ? null : (covers.isNotEmpty ? covers.first : tracks.first), size: 52, radius: 14);
+    if (covers.length < 4) return CoverThumb(t: tracks.isEmpty ? null : (covers.isNotEmpty ? covers.first : tracks.first), size: 52, radius: 14);
     return ClipRRect(
       borderRadius: BorderRadius.circular(14),
       child: SizedBox(
@@ -404,7 +404,7 @@ class _Mosaic extends StatelessWidget {
           crossAxisCount: 2,
           physics: const NeverScrollableScrollPhysics(),
           padding: EdgeInsets.zero,
-          children: [for (final t in covers) Thumb(t: t, size: 26, radius: 0)],
+          children: [for (final t in covers) CoverThumb(t: t, size: 26, radius: 0)],
         ),
       ),
     );
